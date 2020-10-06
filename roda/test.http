@@ -1,0 +1,26 @@
+POST http://127.0.0.1:9292/login
+Content-Type: application/json
+Accept: application/json
+Cache-Control: no-cache
+
+{
+  "login": "email1@mail.com",
+  "password": "12345678"
+}
+
+###
+
+POST http://127.0.0.1:9292/create-account
+Content-Type: application/json
+Accept: application/json
+Cache-Control: no-cache
+
+{
+  "login": "email1@mail.com",
+  "login-confirm": "email1@mail.com",
+  "password": "12345678",
+  "password-confirm": "12345678"
+}
+
+###
+
