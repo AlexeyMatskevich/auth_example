@@ -8,6 +8,9 @@ GEM
       mini_mime (>= 0.1.1)
     method_source (1.0.0)
     mini_mime (1.0.2)
+    multi_json (1.15.0)
+    mustermann (1.1.1)
+      ruby2_keywords (~> 0.0.1)
     nio4r (2.5.4)
     pg (1.2.3)
     pry (0.13.1)
@@ -16,13 +19,10 @@ GEM
     puma (5.0.2)
       nio4r (~> 2.0)
     rack (2.2.3)
-    rake (13.0.1)
-    roda (3.36.0)
+    rack-protection (2.1.0)
       rack
-    rodauth (2.4.0)
-      roda (>= 2.6.0)
-      sequel (>= 4)
-    rubygems-update (3.1.4)
+    rake (13.0.1)
+    ruby2_keywords (0.0.2)
     sequel (5.37.0)
     sequel-seed (1.1.2)
       sequel (>= 4.49.0)
@@ -31,25 +31,35 @@ GEM
       sequel (>= 4.38.0)
     sequel_tools (0.1.7)
       sequel
+    sinatra (2.1.0)
+      mustermann (~> 1.0)
+      rack (~> 2.2)
+      rack-protection (= 2.1.0)
+      tilt (~> 2.0)
+    sinatra-contrib (2.1.0)
+      multi_json
+      mustermann (~> 1.0)
+      rack-protection (= 2.1.0)
+      sinatra (= 2.1.0)
+      tilt (~> 2.0)
+    tilt (2.0.10)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   bcrypt
-  bundler
   jwt
   mail
   pry
   puma
   rake
-  roda
-  rodauth
-  rubygems-update
   sequel
   sequel-seed
   sequel_pg
   sequel_tools
+  sinatra
+  sinatra-contrib
 
 BUNDLED WITH
    2.1.4

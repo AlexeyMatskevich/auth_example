@@ -2,20 +2,19 @@
 
 source "https://rubygems.org"
 
-gem "roda"
 # Server
 gem "sequel"
 gem "sequel_pg"
 gem "sequel_tools"
 gem "sequel-seed"
 # Authentication
-gem "rodauth"
 gem "bcrypt"
 gem "jwt"
 # Tasks
 gem "rake"
 gem "mail"
-
+gem "sinatra"
+gem "sinatra-contrib"
 # console
 gem "pry"
 gem "puma"

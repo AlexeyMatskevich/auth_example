@@ -16,11 +16,25 @@ Accept: application/json
 Cache-Control: no-cache
 
 {
-  "login": "email1@mail.com",
-  "login-confirm": "email1@mail.com",
-  "password": "12345678",
-  "password-confirm": "12345678"
+  "email": "email1@mail.com",
+  "password": "12345678"
 }
+
+###
+
+POST http://127.0.0.1:9292/me
+Content-Type: application/json
+Accept: application/json
+Cache-Control: no-cache
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpZCI6IjNkNWI2NmIxLTJkOWYtNDMwMS1iZTgxLTU1ZjAxNTc3Yzk3MSJ9.Fje1W_jmwM_Y6LAIZhY49dmb5Gw7y0QZuIXLCG_v46A
+
+###
+
+POST http://127.0.0.1:9292/me
+Content-Type: application/json
+Accept: application/json
+Cache-Control: no-cache
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpZCI6IjNkNWI2NmIxLTJkOWYtNDMwMS1iZTgxLTU1ZjAxNTc3Yzk3MSJ9.Fje1W_jmwM_Y6LAIZhY49dmb5Gw7y0QZuIXLCG_fake
 
 ###
 
