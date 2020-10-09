@@ -7,7 +7,7 @@ require "sequel/core"
 class App < Roda
   # Database block
   url = ENV.fetch("DATABASE_URL") { "postgres://postgres:postgres@localhost:5432" }
-  url += "/test_#{ENV["RACK_ENV"]}" if url.gsub("postgres://", "").split("/")[1].nil?
+  url += "/roda_#{ENV["RACK_ENV"]}" if url.gsub("postgres://", "").split("/")[1].nil?
 
   DB = Sequel.connect(url)
   DB.freeze

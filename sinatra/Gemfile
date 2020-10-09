@@ -1,0 +1,21 @@
+# frozen_string_literal: true
+
+source "https://rubygems.org"
+
+gem "roda"
+# Server
+gem "sequel"
+gem "sequel_pg"
+gem "sequel_tools"
+gem "sequel-seed"
+# Authentication
+gem "rodauth"
+gem "bcrypt"
+gem "jwt"
+# Tasks
+gem "rake"
+gem "mail"
+
+# console
+gem "pry"
+gem "puma"

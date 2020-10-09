@@ -4,7 +4,7 @@ require "sequel_tools"
 require "uri"
 url = ENV.fetch("DATABASE_URL", "postgres://postgres:postgres@localhost:5432")
 uri = URI.parse url
-database = uri.path.to_s.split("/")[1] || "roda_#{ENV["RACK_ENV"] || "development" }"
+database = uri.path.to_s.split("/")[1] || "sinatra_#{ENV["RACK_ENV"] || "development" }"
 
 base_config = SequelTools.base_config(
   project_root: File.expand_path(__dir__),
